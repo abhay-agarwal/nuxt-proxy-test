@@ -5,6 +5,6 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useFetch("http://localhost:3000/api/v1/test/")
-console.log(data.value)
+const { data, error } = await useFetch("http://localhost:4000/api/v1/test/")
+console.log(error.value) 
 </script>
